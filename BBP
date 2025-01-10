@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Barbell Physiotherapy Inc.</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Barbell Physiotherapy Inc.</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <h2>Welcome to Barbell Physiotherapy Inc.</h2>
+            <p>Your health is our priority. We offer personalized physiotherapy services tailored to your needs.</p>
+            <a href="#contact" class="cta-button">Book a Consultation</a>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="service-item">
+                <h3>Sports Injury Rehabilitation</h3>
+                <p>Comprehensive treatment and rehabilitation for sports-related injuries.</p>
+            </div>
+            <div class="service-item">
+                <h3>Manual Therapy</h3>
+                <p>Hands-on techniques to relieve pain and improve mobility.</p>
+            </div>
+            <div class="service-item">
+                <h3>Post-Surgery Rehab</h3>
+                <p>Recovery programs to get you back on your feet after surgery.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>At Barbell Physiotherapy Inc., we are committed to helping you achieve optimal physical health. With a focus on evidence-based treatments and personalized care, we work with you to design a rehabilitation plan that aligns with your lifestyle and goals.</p>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>If you're ready to get started or have questions, reach out today!</p>
+            <form action="#" method="post">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                
+                <button type="submit" class="cta-button">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Barbell Physiotherapy Inc. | All Rights Reserved</p>
+        </div>
+    </footer>
+</body>
+</html>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #2d3b6f;
+    color: #fff;
+    padding: 20px 0;
+}
+
+header h1 {
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.hero {
+    background-color: #1e2a47;
+    color: #fff;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 3rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    background-color: #f99e1a;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.cta-button:hover {
+    background-color: #d88314;
+}
+
+.services, .about, .contact {
+    padding: 60px 0;
+    background-color: #fff;
+    text-align: center;
+}
+
+.services h2, .about h2, .contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.service-item {
+    margin-bottom: 30px;
+}
+
+.service-item h3 {
+    font-size: 1.8rem;
+    color: #2d3b6f;
+}
+
+.service-item p {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+form {
+    display: grid;
+    gap: 20px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+form input, form textarea {
+    padding: 10px;
+    font-size: 1rem;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #2d3b6f;
+    color: #fff;
+    padding: 15px 0;
+    text-align: center;
+}
+
+footer p {
+    font-size: 1rem;
+}
+
